@@ -35,8 +35,11 @@ class Song
   
   def self.find_or_create_by_name(name)
     if self.all.find {|x| x.name == name}
-      @@all
+      song
     else 
+      song = self.new
+      song.name = name
+      @@all << song
       song
   end
 end
