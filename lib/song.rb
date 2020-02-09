@@ -54,4 +54,6 @@ class Song
     song.artist_name = (name.split(" - ")[0])
     song
   end
+  
+  def 
 end
