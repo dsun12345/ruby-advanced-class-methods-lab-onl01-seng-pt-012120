@@ -37,6 +37,6 @@ class Song
     if self.all.find {|x| x.name == name}
       @@all
     else 
-      song.
+      song
   end
 end
